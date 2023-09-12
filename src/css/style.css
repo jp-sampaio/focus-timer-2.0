@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --ff-time: 'Roboto', sans-serif;
+
+  --cl-primary: hsla(240, 6%, 21%, 1);
+  --bg-button: hsla(240, 9%, 89%, 1);
+  --cl-selected: hsla(194, 97%, 31%, 1);
+  --cl-light: hsla(0, 0%, 100%, 1);
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-time);
+}
+
+.app {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+main {
+  width: 82.1rem;
+  display: flex;
+  align-items: center;
+  gap: 19rem;
+  color: var(--cl-primary);
+}
+
+.time {
+  display: flex;
+}
+
+.time span {
+  font-size: 12rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1.7rem;
+}
+
+.buttons .ph{
+  font-size: 4.8rem;
+  display: inline-block;
+}
+
+.sounds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.sounds .card {
+  width: 13.9rem;
+  height: 15.6rem;
+  font-size: 5rem;
+  background-color: var(--bg-button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+.card.selected {
+  background-color: var(--cl-selected);
+  color: var(--cl-light);
+}
