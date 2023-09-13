@@ -51,8 +51,10 @@ main {
 }
 
 .buttons .ph{
-  font-size: 4.8rem;
-  display: inline-block;
+  font-size: 5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .sounds {
@@ -61,7 +63,7 @@ main {
   gap: 3.2rem;
 }
 
-.sounds .card {
+.sounds .ph {
   width: 13.9rem;
   height: 15.6rem;
   font-size: 5rem;
@@ -70,9 +72,13 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
+  border: none;
+  box-shadow: 2px 2px 4px #3c3c3c41;
+  cursor: pointer;
+  /* Fazer um efeito de botão 3d, já fiz em outro projeto, além de adicionar animações e outra cores e modos */
 }
 
-.card.selected {
+.ph.selected {
   background-color: var(--cl-selected);
   color: var(--cl-light);
 }
