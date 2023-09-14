@@ -57,6 +57,11 @@ main {
   cursor: pointer;
 }
 
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+  display: none;
+}
+
 .sounds {
   display: flex;
   flex-wrap: wrap;
