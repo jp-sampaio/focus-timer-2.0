@@ -8,6 +8,8 @@ export function start(minutes, seconds) {
   
   timer.updateDisplay()
 
-  events.RegisterControls()
+  events.registerControls()
+
+  events.registerButtons()
 
 }

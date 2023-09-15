@@ -9,6 +9,7 @@
 
   --ff-time: 'Roboto', sans-serif;
 
+  /* --bg-general: hsl(0, 11%, 4%); */
   --cl-primary: hsla(240, 6%, 21%, 1);
   --bg-button: hsla(240, 9%, 89%, 1);
   --cl-selected: hsla(194, 97%, 31%, 1);
@@ -18,12 +19,37 @@
 body {
   font-size: 1.6rem;
   font-family: var(--ff-time);
+  background-color: var(--cl-light);
 }
 
 .app {
   display: grid;
   min-height: 100vh;
   place-items: center;
+}
+
+.light {
+  --cl-primary: hsla(0, 0%, 100%, 1);
+  --cl-light: hsl(0, 11%, 4%);
+}
+
+.toggleMode {
+  position: absolute;
+  top: 3.2rem;
+  left: 3.2rem;
+  font-size: 3.2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--cl-primary);
+}
+
+.light .ph-moon,
+html:not(.light) .ph-sun {
+  display: none;
+}
+
+button {
+  color: var(--cl-primary);
 }
 
 main {

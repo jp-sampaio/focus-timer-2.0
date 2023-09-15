@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,10 @@
 </head>
 <body>
   <div class="app">
+    <button class="toggleMode">
+      <span class="ph ph-moon"></span>
+      <span class="ph ph-sun"></span>
+    </button>
     <main>
       <section class="timer">
         <div class="time">
@@ -35,10 +39,10 @@
         </div>
       </section>
       <section class="sounds">
-        <button class="ph ph-tree selected"></button>
-        <button class="ph ph-cloud-snow"></button>
-        <button class="ph ph-storefront"></button>
-        <button class="ph ph-fire"></button>
+        <button class="ph ph-tree" data-action="tree"></button>
+        <button class="ph ph-cloud-snow" data-action="rain"></button>
+        <button class="ph ph-storefront" data-action="coffee"></button>
+        <button class="ph ph-fire" data-action="fire"></button>
       </section>
     </main>
   </div>
