@@ -14,6 +14,7 @@
   --bg-button: hsla(240, 9%, 89%, 1);
   --cl-selected: hsla(194, 97%, 31%, 1);
   --cl-light: hsla(0, 0%, 100%, 1);
+  --cl-button-selected: hsl(194, 89%, 48%);
 }
 
 body {
@@ -28,7 +29,7 @@ body {
   place-items: center;
 }
 
-.light {
+.dark {
   --cl-primary: hsla(0, 0%, 100%, 1);
   --cl-light: hsl(0, 11%, 4%);
 }
@@ -41,10 +42,11 @@ body {
   background-color: transparent;
   border: none;
   color: var(--cl-primary);
+  cursor: pointer;
 }
 
-.light .ph-moon,
-html:not(.light) .ph-sun {
+.dark .ph-moon,
+html:not(.dark) .ph-sun {
   display: none;
 }
 

@@ -5,13 +5,13 @@ export function registerControls() {
   elements.buttons.addEventListener("click", event => {
     
    const action = event.target.dataset.action
-
+   
    if (typeof actions[action] !== "function") {
-    return
-   }
-
+     return
+    }
+    
     actions[action]()
-
+    
   })
 } 
 
